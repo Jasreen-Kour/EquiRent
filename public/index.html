@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EquiRent — Rent Smart. Work Better. | Equipment Rental Marketplace</title>
+  <meta name="description" content="Peer-to-peer equipment rental marketplace connecting contractors, farmers, and builders with industrial, agricultural, and construction machinery owners.">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563EB' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='2' y='7' width='20' height='14' rx='2' ry='2'></rect><path d='M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16'></path></svg>">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+
+  <!-- Application Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="bg-surface">
+
+  <!-- System Environment Banner (Non-intrusive top indicator) -->
+  <div id="system-banner" class="system-banner">
+    <div class="system-banner-inner">
+      <span class="badge-env"><i data-lucide="shield-check"></i> Demo & Production Ready</span>
+      <span class="banner-text">EquiRent v1.0 • Peer-to-Peer Heavy & Industrial Equipment Marketplace • Illustrative 10% Commission Model</span>
+      <div class="banner-actions">
+        <button id="quick-switch-renter-btn" class="btn-banner" title="Switch instantly to Demo Renter">
+          <i data-lucide="user"></i> Renter Demo
+        </button>
+        <button id="quick-switch-owner-btn" class="btn-banner" title="Switch instantly to Demo Owner">
+          <i data-lucide="briefcase"></i> Owner Demo
+        </button>
+        <button id="reset-seed-btn" class="btn-banner-link" title="Reset sample data">Reset Seed</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Navigation Bar -->
+  <header id="main-header" class="site-header">
+    <div class="container header-container">
+      <div class="header-left">
+        <a href="#/" class="logo">
+          <div class="logo-icon">
+            <i data-lucide="hammer"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-brand">Equi<span class="text-royal">Rent</span></span>
+            <span class="logo-tagline">Rent Smart. Work Better.</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="header-nav" id="desktop-nav">
+        <a href="#/" class="nav-link" data-route="/">Home</a>
+        <a href="#/explore" class="nav-link" data-route="/explore">Explore Equipment</a>
+        <a href="#/help" class="nav-link" data-route="/help">How It Works</a>
+        <a href="#/help" class="nav-link" data-route="/help">Support</a>
+      </nav>
+
+      <div class="header-right" id="header-user-actions">
+        <!-- Rendered dynamically by state.js / app.js -->
+        <div class="auth-guest-links">
+          <a href="#/login" class="btn btn-outline btn-sm">Log In</a>
+          <a href="#/register" class="btn btn-primary btn-sm">Sign Up</a>
+        </div>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <div class="logo">
+        <div class="logo-icon"><i data-lucide="hammer"></i></div>
+        <span class="logo-brand">Equi<span class="text-royal">Rent</span></span>
+      </div>
+      <button class="drawer-close" id="mobile-drawer-close"><i data-lucide="x"></i></button>
+    </div>
+    <div class="drawer-content" id="mobile-drawer-content">
+      <!-- Injected dynamically -->
+    </div>
+  </div>
+
+  <!-- Notification Dropdown Menu Container (Appears under bell icon) -->
+  <div id="notifications-menu" class="notifications-menu hidden">
+    <div class="notifications-header">
+      <h4>Notifications</h4>
+      <button id="mark-all-read-btn" class="btn-link">Mark all read</button>
+    </div>
+    <div class="notifications-list" id="notifications-list">
+      <!-- Injected dynamically -->
+    </div>
+    <div class="notifications-footer">
+      <a href="#/dashboard" class="btn-link">View all dashboard alerts</a>
+    </div>
+  </div>
+
+  <!-- Main View Container (Single Page Application Router Mount Point) -->
+  <main id="app-root" class="main-content">
+    <!-- View content loaded dynamically via router.js -->
+    <div class="loader-container">
+      <div class="spinner"></div>
+      <p>Loading EquiRent marketplace...</p>
+    </div>
+  </main>
+
+  <!-- Global Modal Container -->
+  <div id="modal-container" class="modal-overlay hidden">
+    <div class="modal-card" id="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn"><i data-lucide="x"></i></button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Global Toast Notification System -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/api.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/views/landing.js"></script>
+  <script src="js/views/explore.js"></script>
+  <script src="js/views/details.js"></script>
+  <script src="js/views/dashboard.js"></script>
+  <script src="js/views/myBookings.js"></script>
+  <script src="js/views/myEquipment.js"></script>
+  <script src="js/views/listEquipment.js"></script>
+  <script src="js/views/earnings.js"></script>
+  <script src="js/views/messages.js"></script>
+  <script src="js/views/reviews.js"></script>
+  <script src="js/views/settings.js"></script>
+  <script src="js/views/help.js"></script>
+  <script src="js/views/auth.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,981 @@
+{
+  "users": [
+    {
+      "_id": "usr_renter_01",
+      "id": "usr_renter_01",
+      "name": "Marcus Vance",
+      "email": "renter@equirent.com",
+      "password": "$2a$10$ZI1K4yTMUMd3abCKvEAa7ua4frGguHgD7dUWUOlGfec/IOfTuYoYi",
+      "role": "renter",
+      "phone": "+91 98201 44921",
+      "company": "Vance Infrastructure & Builds",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+      "location": "Pune, MH",
+      "verified": true,
+      "bio": "Commercial infrastructure contractor and builder executing civil and landscape projects.",
+      "createdAt": "2025-11-10T08:00:00.000Z"
+    },
+    {
+      "_id": "usr_owner_01",
+      "id": "usr_owner_01",
+      "name": "Sarah Jenkins",
+      "email": "owner@equirent.com",
+      "password": "$2a$10$ZI1K4yTMUMd3abCKvEAa7ua4frGguHgD7dUWUOlGfec/IOfTuYoYi",
+      "role": "owner",
+      "phone": "+91 98450 12844",
+      "company": "Apex Machinery & Fleet Rentals",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=250&q=80",
+      "location": "Bengaluru, KA",
+      "verified": true,
+      "bio": "Fleet director at Apex Machinery. Over 15 years maintaining heavy construction and agricultural equipment.",
+      "createdAt": "2025-08-15T09:30:00.000Z"
+    },
+    {
+      "_id": "usr_both_01",
+      "id": "usr_both_01",
+      "name": "Alex Rivera",
+      "email": "alex@equirent.com",
+      "password": "$2a$10$ZI1K4yTMUMd3abCKvEAa7ua4frGguHgD7dUWUOlGfec/IOfTuYoYi",
+      "role": "both",
+      "phone": "+91 98112 30188",
+      "company": "Rivera Event & Tool Solutions",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+      "location": "Delhi NCR",
+      "verified": true,
+      "bio": "Industrial and event production supplier. Renting out high-end audio, generators, and compact loaders.",
+      "createdAt": "2025-09-01T12:00:00.000Z"
+    }
+  ],
+  "equipment": [
+    {
+      "_id": "eq_1791982994024",
+      "id": "eq_1791982994024",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "Available",
+      "createdAt": "2026-10-14T13:03:14.024Z",
+      "title": "Bobcat E35 Compact Excavator",
+      "category": "Construction machinery",
+      "description": "Zero tail swing mini excavator designed for confined work sites. Features hydraulic thumb, 18-inch trenching bucket, and enclosed climate-controlled cab.",
+      "pricePerDay": 5500,
+      "securityDeposit": 15000,
+      "location": "Pune, Maharashtra",
+      "condition": "Excellent",
+      "brand": "Bobcat",
+      "modelYear": 2024,
+      "specs": [
+        {
+          "label": "Operating Weight",
+          "value": "14,000 lbs"
+        },
+        {
+          "label": "Horsepower",
+          "value": "85 HP"
+        }
+      ],
+      "primaryImage": "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "ownerId": "usr_renter_01",
+      "ownerName": "Marcus Vance",
+      "ownerRating": 4.9,
+      "ownerReviewsCount": 1,
+      "featured": false
+    },
+    {
+      "_id": "eq_01",
+      "id": "eq_01",
+      "title": "Caterpillar 308 CR Mini Hydraulic Excavator",
+      "category": "Construction machinery",
+      "description": "The Cat 308 CR Mini Excavator delivers high performance, durability and versatility in a compact size. Sealed and pressurized cab equipped with air conditioning, heated seat, LCD monitor with jog-dial, and rearview camera. Includes hydraulic thumb and 24-inch digging bucket.",
+      "pricePerDay": 8500,
+      "securityDeposit": 15000,
+      "location": "Pune, MH",
+      "condition": "Excellent",
+      "brand": "Caterpillar",
+      "modelYear": 2023,
+      "specs": [
+        {
+          "label": "Operating Weight",
+          "value": "18,870 lbs"
+        },
+        {
+          "label": "Net Power",
+          "value": "70.3 HP"
+        },
+        {
+          "label": "Max Dig Depth",
+          "value": "15 ft 3 in"
+        },
+        {
+          "label": "Fuel Type",
+          "value": "Ultra-low sulfur diesel"
+        },
+        {
+          "label": "Track Type",
+          "value": "Rubber Tracks"
+        }
+      ],
+      "primaryImage": "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "ownerId": "usr_owner_01",
+      "ownerName": "Sarah Jenkins (Apex Machinery)",
+      "ownerRating": 4.95,
+      "ownerReviewsCount": 38,
+      "availability": "Available",
+      "rating": 4.9,
+      "reviewsCount": 14,
+      "featured": true,
+      "createdAt": "2026-01-10T10:00:00.000Z"
+    },
+    {
+      "_id": "eq_02",
+      "id": "eq_02",
+      "title": "John Deere 6120M Utility Tractor (120 HP)",
+      "category": "Agricultural machinery",
+      "description": "Ideal agricultural workhorse for tilling, seeding, heavy loader work, and transport. Features a comfortable CommandARM cab, 24-speed AutoPowr transmission, 4WD, and heavy-duty front hitch with front loader ready.",
+      "pricePerDay": 6500,
+      "securityDeposit": 10000,
+      "location": "Bengaluru, KA",
+      "condition": "Excellent",
+      "brand": "John Deere",
+      "modelYear": 2023,
+      "specs": [
+        {
+          "label": "Engine Power",
+          "value": "120 HP"
+        },
+        {
+          "label": "Drive",
+          "value": "4WD Mechanical Front Wheel"
+        },
+        {
+          "label": "Rear PTO",
+          "value": "540/1000 RPM"
+        },
+        {
+          "label": "Lift Capacity",
+          "value": "7,700 lbs"
+        },
+        {
+          "label": "Fuel Capacity",
+          "value": "54 Gallons"
+        }
+      ],
+      "primaryImage": "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "ownerId": "usr_owner_01",
+      "ownerName": "Sarah Jenkins (Apex Machinery)",
+      "ownerRating": 4.95,
+      "ownerReviewsCount": 38,
+      "availability": "Available",
+      "rating": 4.8,
+      "reviewsCount": 9,
+      "featured": true,
+      "createdAt": "2026-01-15T11:30:00.000Z"
+    },
+    {
+      "_id": "eq_03",
+      "id": "eq_03",
+      "title": "Bobcat S650 Skid-Steer Loader",
+      "category": "Construction machinery",
+      "description": "Vertical lift path loader offering increased lifting capacity and reach. Powered by a Tier 4 turbocharged diesel engine. Comes equipped with hydraulic quick-tach system, enclosed cab with heating and AC, and standard dirt bucket.",
+      "pricePerDay": 5500,
+      "securityDeposit": 8000,
+      "location": "Delhi NCR",
+      "condition": "Excellent",
+      "brand": "Bobcat",
+      "modelYear": 2024,
+      "specs": [
+        {
+          "label": "Rated Operating Capacity",
+          "value": "2,690 lbs"
+        },
+        {
+          "label": "Horsepower",
+          "value": "74 HP"
+        },
+        {
+          "label": "Operating Weight",
+          "value": "8,061 lbs"
+        },
+        {
+          "label": "Auxiliary Hydraulics",
+          "value": "Standard & High Flow"
+        }
+      ],
+      "primaryImage": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "ownerId": "usr_both_01",
+      "ownerName": "Alex Rivera",
+      "ownerRating": 4.88,
+      "ownerReviewsCount": 22,
+      "availability": "Available",
+      "rating": 4.9,
+      "reviewsCount": 16,
+      "featured": true,
+      "createdAt": "2026-01-20T14:00:00.000Z"
+    },
+    {
+      "_id": "eq_04",
+      "id": "eq_04",
+      "title": "Cummins 150 kW Mobile Silent Diesel Generator",
+      "category": "Industrial equipment",
+      "description": "Towable sound-attenuated diesel generator engineered for continuous construction power or large event backup. Digital auto-start controller, distribution panel, and secondary containment basin.",
+      "pricePerDay": 6000,
+      "securityDeposit": 10000,
+      "location": "Pune, MH",
+      "condition": "Brand New",
+      "brand": "Cummins",
+      "modelYear": 2024,
+      "specs": [
+        {
+          "label": "Prime Output",
+          "value": "150 kW / 187 kVA"
+        },
+        {
+          "label": "Voltage",
+          "value": "230/415V 3-Phase switchable"
+        },
+        {
+          "label": "Sound Level",
+          "value": "68 dBA @ 23 ft"
+        },
+        {
+          "label": "Fuel Run Time",
+          "value": "28 hours at 75% load"
+        }
+      ],
+      "primaryImage": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "ownerId": "usr_owner_01",
+      "ownerName": "Sarah Jenkins (Apex Machinery)",
+      "ownerRating": 4.95,
+      "ownerReviewsCount": 38,
+      "availability": "Available",
+      "rating": 5,
+      "reviewsCount": 7,
+      "featured": false,
+      "createdAt": "2026-02-01T09:00:00.000Z"
+    },
+    {
+      "_id": "eq_05",
+      "id": "eq_05",
+      "title": "JLG 450AJ 45ft Articulating Boom Lift",
+      "category": "Construction machinery",
+      "description": "Articulating boom lift with 45 ft platform height and 25 ft horizontal outreach. 4WD rough terrain pneumatic tires, 550 lb unrestricted platform capacity, and zero tailswing for tight job sites.",
+      "pricePerDay": 7500,
+      "securityDeposit": 12000,
+      "location": "Bengaluru, KA",
+      "condition": "Excellent",
+      "brand": "JLG",
+      "modelYear": 2022,
+      "specs": [
+        {
+          "label": "Platform Height",
+          "value": "45 ft (13.72 m)"
+        },
+        {
+          "label": "Horizontal Reach",
+          "value": "25 ft"
+        },
+        {
+          "label": "Platform Capacity",
+          "value": "550 lbs"
+        },
+        {
+          "label": "Drive Speed",
+          "value": "4.5 mph (4WD)"
+        }
+      ],
+      "primaryImage": "https://images.unsplash.com/photo-1579273166629-9e8c4e4e933e?auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1579273166629-9e8c4e4e933e?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "ownerId": "usr_owner_01",
+      "ownerName": "Sarah Jenkins (Apex Machinery)",
+      "ownerRating": 4.95,
+      "ownerReviewsCount": 38,
+      "availability": "Available",
+      "rating": 4.85,
+      "reviewsCount": 11,
+      "featured": true,
+      "createdAt": "2026-02-05T13:00:00.000Z"
+    },
+    {
+      "_id": "eq_06",
+      "id": "eq_06",
+      "title": "Hilti TE 3000-AVR Heavy Demolition Jackhammer",
+      "category": "Power tools",
+      "description": "Exceptional demolition performance with 68 joules of impact energy. Active Vibration Reduction (AVR) reduces fatigue. Operates on standard electrical circuit. Comes with wheeled transport cart and 4 chisel bits.",
+      "pricePerDay": 1800,
+      "securityDeposit": 3000,
+      "location": "Delhi NCR",
+      "condition": "Excellent",
+      "brand": "Hilti",
+      "modelYear": 2024,
+      "specs": [
+        {
+          "label": "Impact Energy",
+          "value": "68 Joules"
+        },
+        {
+          "label": "Full Hammering Frequency",
+          "value": "860 impacts/minute"
+        },
+        {
+          "label": "Weight",
+          "value": "65.9 lbs"
+        },
+        {
+          "label": "Chuck Type",
+          "value": "TE-H 28mm hex"
+        }
+      ],
+      "primaryImage": "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "ownerId": "usr_both_01",
+      "ownerName": "Alex Rivera",
+      "ownerRating": 4.88,
+      "ownerReviewsCount": 22,
+      "availability": "Available",
+      "rating": 4.92,
+      "reviewsCount": 19,
+      "featured": true,
+      "createdAt": "2026-02-10T16:00:00.000Z"
+    },
+    {
+      "_id": "eq_07",
+      "id": "eq_07",
+      "title": "Toyota 8-Series 5,000 lb Pneumatic Forklift",
+      "category": "Industrial equipment",
+      "description": "Dual-fuel (LPG/Diesel) pneumatic tire forklift for indoor and outdoor yard material handling. 3-stage mast with 189 in max lift height, full side shifter, and operator presence sensing system.",
+      "pricePerDay": 4000,
+      "securityDeposit": 6000,
+      "location": "Mumbai, MH",
+      "condition": "Good",
+      "brand": "Toyota Material Handling",
+      "modelYear": 2022,
+      "specs": [
+        {
+          "label": "Capacity",
+          "value": "5,000 lbs @ 24 in load center"
+        },
+        {
+          "label": "Max Fork Height",
+          "value": "189 in (15.75 ft)"
+        },
+        {
+          "label": "Fuel System",
+          "value": "LPG / Diesel"
+        },
+        {
+          "label": "Tire Type",
+          "value": "Solid Pneumatic"
+        }
+      ],
+      "primaryImage": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "ownerId": "usr_owner_01",
+      "ownerName": "Sarah Jenkins (Apex Machinery)",
+      "ownerRating": 4.95,
+      "ownerReviewsCount": 38,
+      "availability": "Available",
+      "rating": 4.75,
+      "reviewsCount": 8,
+      "featured": false,
+      "createdAt": "2026-02-12T10:15:00.000Z"
+    },
+    {
+      "_id": "eq_08",
+      "id": "eq_08",
+      "title": "JBL VTX Line Array Concert Audio System + Console",
+      "category": "Event equipment",
+      "description": "Professional touring grade concert sound setup. Includes 8x JBL VTX A8 dual 8-inch compact line array elements, 4x B18 subwoofers, Crown I-Tech HD amplification rack, and digital mixing console.",
+      "pricePerDay": 9500,
+      "securityDeposit": 15000,
+      "location": "Delhi NCR",
+      "condition": "Brand New",
+      "brand": "JBL Professional",
+      "modelYear": 2024,
+      "specs": [
+        {
+          "label": "System Type",
+          "value": "Dual 8-in Compact Line Array"
+        },
+        {
+          "label": "Max SPL",
+          "value": "139 dB peak"
+        },
+        {
+          "label": "Coverage",
+          "value": "110 degrees horizontal"
+        },
+        {
+          "label": "Amplification",
+          "value": "Crown I-Tech HD Rack"
+        }
+      ],
+      "primaryImage": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "ownerId": "usr_both_01",
+      "ownerName": "Alex Rivera",
+      "ownerRating": 4.88,
+      "ownerReviewsCount": 22,
+      "availability": "Available",
+      "rating": 5,
+      "reviewsCount": 6,
+      "featured": true,
+      "createdAt": "2026-02-15T11:00:00.000Z"
+    },
+    {
+      "_id": "eq_09",
+      "id": "eq_09",
+      "title": "40x60 ft Heavy Commercial High-Peak Event Tent",
+      "category": "Event equipment",
+      "description": "Commercial 16oz blockout vinyl pole tent designed to host up to 250 seated guests or 350 cocktail style. Includes structural center poles, heavy stakes, guy ratchets, and cathedral window sidewalls.",
+      "pricePerDay": 12000,
+      "securityDeposit": 18000,
+      "location": "Mumbai, MH",
+      "condition": "Excellent",
+      "brand": "Eureka Commercial",
+      "modelYear": 2023,
+      "specs": [
+        {
+          "label": "Dimensions",
+          "value": "40 ft x 60 ft (2,400 sq ft)"
+        },
+        {
+          "label": "Capacity",
+          "value": "240-320 persons"
+        },
+        {
+          "label": "Wind Rating",
+          "value": "Up to 70 mph certified"
+        },
+        {
+          "label": "Sidewalls",
+          "value": "Cathedral window panels included"
+        }
+      ],
+      "primaryImage": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "ownerId": "usr_owner_01",
+      "ownerName": "Sarah Jenkins (Apex Machinery)",
+      "ownerRating": 4.95,
+      "ownerReviewsCount": 38,
+      "availability": "Available",
+      "rating": 4.9,
+      "reviewsCount": 15,
+      "featured": false,
+      "createdAt": "2026-02-18T14:45:00.000Z"
+    },
+    {
+      "_id": "eq_10",
+      "id": "eq_10",
+      "title": "Husqvarna K770 14-inch Concrete Cut-Off Saw",
+      "category": "Power tools",
+      "description": "Powerful, all-round power cutter with digital ignition and active air filtration. Equipped with a 14-inch diamond blade for concrete, asphalt, and masonry cutting up to 5 inches deep.",
+      "pricePerDay": 1200,
+      "securityDeposit": 2500,
+      "location": "Pune, MH",
+      "condition": "Excellent",
+      "brand": "Husqvarna",
+      "modelYear": 2024,
+      "specs": [
+        {
+          "label": "Displacement",
+          "value": "73.5 cc (5 HP)"
+        },
+        {
+          "label": "Max Cutting Depth",
+          "value": "5 inches"
+        },
+        {
+          "label": "Blade Diameter",
+          "value": "14 inches (350 mm)"
+        },
+        {
+          "label": "Weight",
+          "value": "22.4 lbs"
+        }
+      ],
+      "primaryImage": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1000&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "ownerId": "usr_owner_01",
+      "ownerName": "Sarah Jenkins (Apex Machinery)",
+      "ownerRating": 4.95,
+      "ownerReviewsCount": 38,
+      "availability": "Available",
+      "rating": 4.88,
+      "reviewsCount": 23,
+      "featured": false,
+      "createdAt": "2026-02-20T08:30:00.000Z"
+    }
+  ],
+  "bookings": [
+    {
+      "_id": "bk_1791982720112",
+      "id": "bk_1791982720112",
+      "bookingId": "EQ-5674",
+      "status": "Pending",
+      "paymentStatus": "Simulated Escrow",
+      "createdAt": "2026-10-14T12:58:40.112Z",
+      "equipmentId": "eq_03",
+      "equipmentTitle": "Bobcat S650 Skid-Steer Loader",
+      "equipmentImage": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80",
+      "category": "Construction machinery",
+      "renterId": "usr_renter_01",
+      "renterName": "Marcus Vance",
+      "renterEmail": "renter@equirent.com",
+      "renterPhone": "+91 98201 44921",
+      "ownerId": "usr_both_01",
+      "ownerName": "Alex Rivera",
+      "startDate": "2026-12-02",
+      "endDate": "2026-12-05",
+      "totalDays": 3,
+      "dailyPrice": 5500,
+      "subtotal": 16500,
+      "securityDeposit": 8000,
+      "serviceFee": 1650,
+      "totalPrice": 26150,
+      "ownerEarnings": 14850,
+      "deliveryType": "Delivery Requested",
+      "notes": "Test automated booking verification"
+    },
+    {
+      "_id": "bk_1791982716520",
+      "id": "bk_1791982716520",
+      "bookingId": "EQ-4993",
+      "status": "Pending",
+      "paymentStatus": "Simulated Escrow",
+      "createdAt": "2026-10-14T12:58:36.520Z",
+      "equipmentId": "eq_03",
+      "equipmentTitle": "Bobcat S650 Skid-Steer Loader",
+      "equipmentImage": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80",
+      "category": "Construction machinery",
+      "renterId": "usr_renter_01",
+      "renterName": "Marcus Vance",
+      "renterEmail": "renter@equirent.com",
+      "renterPhone": "+91 98201 44921",
+      "ownerId": "usr_both_01",
+      "ownerName": "Alex Rivera",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-24",
+      "totalDays": 3,
+      "dailyPrice": 5500,
+      "subtotal": 16500,
+      "securityDeposit": 8000,
+      "serviceFee": 1650,
+      "totalPrice": 26150,
+      "ownerEarnings": 14850,
+      "deliveryType": "Delivery Requested",
+      "notes": "Test automated booking verification"
+    },
+    {
+      "_id": "bk_1791982668704",
+      "id": "bk_1791982668704",
+      "bookingId": "EQ-6315",
+      "status": "Pending",
+      "paymentStatus": "Simulated Escrow",
+      "createdAt": "2026-10-14T12:57:48.704Z",
+      "equipmentId": "eq_03",
+      "equipmentTitle": "Bobcat S650 Skid-Steer Loader",
+      "equipmentImage": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80",
+      "category": "Construction machinery",
+      "renterId": "usr_renter_01",
+      "renterName": "Marcus Vance",
+      "renterEmail": "renter@equirent.com",
+      "renterPhone": "+91 98201 44921",
+      "ownerId": "usr_both_01",
+      "ownerName": "Alex Rivera",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-05",
+      "totalDays": 4,
+      "dailyPrice": 5500,
+      "subtotal": 22000,
+      "securityDeposit": 8000,
+      "serviceFee": 2200,
+      "totalPrice": 32200,
+      "ownerEarnings": 19800,
+      "deliveryType": "Delivery Requested",
+      "notes": "Test automated booking verification"
+    },
+    {
+      "_id": "bk_101",
+      "id": "bk_101",
+      "bookingId": "EQ-9481",
+      "equipmentId": "eq_01",
+      "equipmentTitle": "Caterpillar 308 CR Mini Hydraulic Excavator",
+      "equipmentImage": "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1000&q=80",
+      "category": "Construction machinery",
+      "renterId": "usr_renter_01",
+      "renterName": "Marcus Vance",
+      "renterEmail": "renter@equirent.com",
+      "renterPhone": "+91 98201 44921",
+      "ownerId": "usr_owner_01",
+      "ownerName": "Sarah Jenkins (Apex Machinery)",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-21",
+      "totalDays": 3,
+      "dailyPrice": 8500,
+      "subtotal": 25500,
+      "securityDeposit": 15000,
+      "serviceFee": 2550,
+      "totalPrice": 43050,
+      "ownerEarnings": 22950,
+      "status": "Active",
+      "paymentStatus": "Simulated Escrow",
+      "deliveryType": "Delivery Requested",
+      "notes": "Site delivery to Pune Metro commercial construction lot. Gate code: #4490.",
+      "createdAt": "2026-10-14T09:00:00.000Z"
+    },
+    {
+      "_id": "bk_102",
+      "id": "bk_102",
+      "bookingId": "EQ-8722",
+      "equipmentId": "eq_02",
+      "equipmentTitle": "John Deere 6120M Utility Tractor (120 HP)",
+      "equipmentImage": "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1000&q=80",
+      "category": "Agricultural machinery",
+      "renterId": "usr_renter_01",
+      "renterName": "Marcus Vance",
+      "renterEmail": "renter@equirent.com",
+      "renterPhone": "+91 98201 44921",
+      "ownerId": "usr_owner_01",
+      "ownerName": "Sarah Jenkins (Apex Machinery)",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-28",
+      "totalDays": 3,
+      "dailyPrice": 6500,
+      "subtotal": 19500,
+      "securityDeposit": 10000,
+      "serviceFee": 1950,
+      "totalPrice": 31450,
+      "ownerEarnings": 17550,
+      "status": "Confirmed",
+      "paymentStatus": "Simulated Escrow",
+      "deliveryType": "Pickup",
+      "notes": "Preparing 15 acres for winter seed cover. Need front loader attachment included.",
+      "createdAt": "2026-10-14T11:20:00.000Z"
+    },
+    {
+      "_id": "bk_103",
+      "id": "bk_103",
+      "bookingId": "EQ-7319",
+      "equipmentId": "eq_05",
+      "equipmentTitle": "JLG 450AJ 45ft Articulating Boom Lift",
+      "equipmentImage": "https://images.unsplash.com/photo-1579273166629-9e8c4e4e933e?auto=format&fit=crop&w=1000&q=80",
+      "category": "Construction machinery",
+      "renterId": "usr_renter_01",
+      "renterName": "Marcus Vance",
+      "renterEmail": "renter@equirent.com",
+      "renterPhone": "+91 98201 44921",
+      "ownerId": "usr_owner_01",
+      "ownerName": "Sarah Jenkins (Apex Machinery)",
+      "startDate": "2026-09-10",
+      "endDate": "2026-09-14",
+      "totalDays": 4,
+      "dailyPrice": 7500,
+      "subtotal": 30000,
+      "securityDeposit": 12000,
+      "serviceFee": 3000,
+      "totalPrice": 45000,
+      "ownerEarnings": 27000,
+      "status": "Completed",
+      "paymentStatus": "Released",
+      "deliveryType": "Delivery Requested",
+      "notes": "Industrial warehouse exterior cladding repaint.",
+      "createdAt": "2026-09-08T15:30:00.000Z"
+    },
+    {
+      "_id": "bk_104",
+      "id": "bk_104",
+      "bookingId": "EQ-6504",
+      "equipmentId": "eq_08",
+      "equipmentTitle": "JBL VTX Line Array Concert Audio System + Console",
+      "equipmentImage": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1000&q=80",
+      "category": "Event equipment",
+      "renterId": "usr_renter_01",
+      "renterName": "Marcus Vance",
+      "renterEmail": "renter@equirent.com",
+      "renterPhone": "+91 98201 44921",
+      "ownerId": "usr_both_01",
+      "ownerName": "Alex Rivera",
+      "startDate": "2026-08-20",
+      "endDate": "2026-08-22",
+      "totalDays": 2,
+      "dailyPrice": 9500,
+      "subtotal": 19000,
+      "securityDeposit": 15000,
+      "serviceFee": 1900,
+      "totalPrice": 35900,
+      "ownerEarnings": 17100,
+      "status": "Completed",
+      "paymentStatus": "Released",
+      "deliveryType": "Pickup",
+      "notes": "Corporate cultural celebration in Delhi NCR.",
+      "createdAt": "2026-08-15T10:00:00.000Z"
+    },
+    {
+      "_id": "bk_105",
+      "id": "bk_105",
+      "bookingId": "EQ-5921",
+      "equipmentId": "eq_07",
+      "equipmentTitle": "Toyota 8-Series 5,000 lb Pneumatic Forklift",
+      "equipmentImage": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80",
+      "category": "Industrial equipment",
+      "renterId": "usr_renter_01",
+      "renterName": "Marcus Vance",
+      "renterEmail": "renter@equirent.com",
+      "renterPhone": "+91 98201 44921",
+      "ownerId": "usr_owner_01",
+      "ownerName": "Sarah Jenkins (Apex Machinery)",
+      "startDate": "2026-07-04",
+      "endDate": "2026-07-06",
+      "totalDays": 2,
+      "dailyPrice": 4000,
+      "subtotal": 8000,
+      "securityDeposit": 6000,
+      "serviceFee": 800,
+      "totalPrice": 14800,
+      "ownerEarnings": 7200,
+      "status": "Cancelled",
+      "paymentStatus": "Refunded",
+      "deliveryType": "Pickup",
+      "notes": "Project dates pushed due to supplier delay.",
+      "createdAt": "2026-07-01T14:10:00.000Z"
+    }
+  ],
+  "reviews": [
+    {
+      "_id": "rev_01",
+      "id": "rev_01",
+      "equipmentId": "eq_01",
+      "bookingId": "bk_prev_01",
+      "userId": "usr_renter_01",
+      "userName": "Marcus Vance",
+      "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+      "rating": 5,
+      "comment": "The Cat 308 was in pristine condition. Hydraulics were crisp and fuel consumption was very reasonable. Sarah arranged on-time drop-off and pickup. Will rent again!",
+      "equipmentConditionRating": 5,
+      "communicationRating": 5,
+      "createdAt": "2026-08-12T10:00:00.000Z"
+    },
+    {
+      "_id": "rev_02",
+      "id": "rev_02",
+      "equipmentId": "eq_05",
+      "bookingId": "bk_103",
+      "userId": "usr_renter_01",
+      "userName": "Marcus Vance",
+      "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+      "rating": 5,
+      "comment": "JLG Boom lift performed flawlessly for our 4-day warehouse repainting job. Controls were smooth and battery/diesel hybrid ran quietly.",
+      "equipmentConditionRating": 5,
+      "communicationRating": 5,
+      "createdAt": "2026-09-15T16:20:00.000Z"
+    },
+    {
+      "_id": "rev_03",
+      "id": "rev_03",
+      "equipmentId": "eq_06",
+      "bookingId": "bk_prev_03",
+      "userId": "usr_renter_01",
+      "userName": "Marcus Vance",
+      "userAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+      "rating": 5,
+      "comment": "This Hilti demolition hammer is exceptional. Chewed right through a 6-inch reinforced concrete slab in half a day. Alex provided safety glasses and chisel accessories.",
+      "equipmentConditionRating": 5,
+      "communicationRating": 5,
+      "createdAt": "2026-09-28T12:00:00.000Z"
+    }
+  ],
+  "messages": [
+    {
+      "_id": "msg_01",
+      "id": "msg_01",
+      "conversationId": "conv_sarah_marcus",
+      "senderId": "usr_renter_01",
+      "senderName": "Marcus Vance",
+      "recipientId": "usr_owner_01",
+      "recipientName": "Sarah Jenkins",
+      "equipmentId": "eq_01",
+      "equipmentTitle": "Caterpillar 308 CR Mini Hydraulic Excavator",
+      "text": "Hi Sarah, does the Cat 308 come with the hydraulic thumb pre-attached?",
+      "read": true,
+      "createdAt": "2026-10-13T14:15:00.000Z"
+    },
+    {
+      "_id": "msg_02",
+      "id": "msg_02",
+      "conversationId": "conv_sarah_marcus",
+      "senderId": "usr_owner_01",
+      "senderName": "Sarah Jenkins",
+      "recipientId": "usr_renter_01",
+      "recipientName": "Marcus Vance",
+      "equipmentId": "eq_01",
+      "equipmentTitle": "Caterpillar 308 CR Mini Hydraulic Excavator",
+      "text": "Yes Marcus! The hydraulic thumb and 24-inch toothed trenching bucket are already mounted and tested.",
+      "read": true,
+      "createdAt": "2026-10-13T14:22:00.000Z"
+    },
+    {
+      "_id": "msg_03",
+      "id": "msg_03",
+      "conversationId": "conv_sarah_marcus",
+      "senderId": "usr_renter_01",
+      "senderName": "Marcus Vance",
+      "recipientId": "usr_owner_01",
+      "recipientName": "Sarah Jenkins",
+      "equipmentId": "eq_01",
+      "equipmentTitle": "Caterpillar 308 CR Mini Hydraulic Excavator",
+      "text": "Terrific. Booking request sent for next week. Our trailer hitch is ready if we decide to pick up.",
+      "read": true,
+      "createdAt": "2026-10-13T14:30:00.000Z"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "notif_1791983109393",
+      "id": "notif_1791983109393",
+      "read": false,
+      "createdAt": "2026-10-14T13:05:09.393Z",
+      "userId": "usr_renter_01",
+      "title": "Booking Confirmed",
+      "message": "Your booking for \"John Deere 6120M Utility Tractor (120 HP)\" is now Confirmed.",
+      "type": "booking_status",
+      "link": "#/bookings"
+    },
+    {
+      "_id": "notif_1791983107147",
+      "id": "notif_1791983107147",
+      "read": false,
+      "createdAt": "2026-10-14T13:05:07.147Z",
+      "userId": "usr_renter_01",
+      "title": "Booking Confirmed",
+      "message": "Your booking for \"John Deere 6120M Utility Tractor (120 HP)\" is now Confirmed.",
+      "type": "booking_status",
+      "link": "#/bookings"
+    },
+    {
+      "_id": "notif_1791982720115",
+      "id": "notif_1791982720115",
+      "read": false,
+      "createdAt": "2026-10-14T12:58:40.116Z",
+      "userId": "usr_renter_01",
+      "title": "Booking Request Submitted",
+      "message": "Your booking request for \"Bobcat S650 Skid-Steer Loader\" is pending owner approval.",
+      "type": "booking_status",
+      "link": "#/bookings"
+    },
+    {
+      "_id": "notif_1791982720114",
+      "id": "notif_1791982720114",
+      "read": false,
+      "createdAt": "2026-10-14T12:58:40.114Z",
+      "userId": "usr_both_01",
+      "title": "New Booking Request",
+      "message": "Marcus Vance requested to rent \"Bobcat S650 Skid-Steer Loader\" for 3 days (₹26,150 total).",
+      "type": "booking_request",
+      "link": "#/dashboard"
+    },
+    {
+      "_id": "notif_1791982716523",
+      "id": "notif_1791982716523",
+      "read": false,
+      "createdAt": "2026-10-14T12:58:36.523Z",
+      "userId": "usr_renter_01",
+      "title": "Booking Request Submitted",
+      "message": "Your booking request for \"Bobcat S650 Skid-Steer Loader\" is pending owner approval.",
+      "type": "booking_status",
+      "link": "#/bookings"
+    },
+    {
+      "_id": "notif_1791982716522",
+      "id": "notif_1791982716522",
+      "read": false,
+      "createdAt": "2026-10-14T12:58:36.522Z",
+      "userId": "usr_both_01",
+      "title": "New Booking Request",
+      "message": "Marcus Vance requested to rent \"Bobcat S650 Skid-Steer Loader\" for 3 days (₹26,150 total).",
+      "type": "booking_request",
+      "link": "#/dashboard"
+    },
+    {
+      "_id": "notif_1791982668802",
+      "id": "notif_1791982668802",
+      "read": false,
+      "createdAt": "2026-10-14T12:57:48.802Z",
+      "userId": "usr_renter_01",
+      "title": "Booking Request Submitted",
+      "message": "Your booking request for \"Bobcat S650 Skid-Steer Loader\" is pending owner approval.",
+      "type": "booking_status",
+      "link": "#/bookings"
+    },
+    {
+      "_id": "notif_1791982668800",
+      "id": "notif_1791982668800",
+      "read": false,
+      "createdAt": "2026-10-14T12:57:48.800Z",
+      "userId": "usr_both_01",
+      "title": "New Booking Request",
+      "message": "Marcus Vance requested to rent \"Bobcat S650 Skid-Steer Loader\" for 4 days (₹32,200 total).",
+      "type": "booking_request",
+      "link": "#/dashboard"
+    },
+    {
+      "_id": "notif_01",
+      "id": "notif_01",
+      "userId": "usr_owner_01",
+      "title": "New Booking Request",
+      "message": "Marcus Vance requested John Deere 6120M for 3 days (₹31,450 total).",
+      "type": "booking_request",
+      "link": "#/dashboard",
+      "read": false,
+      "createdAt": "2026-10-14T11:20:00.000Z"
+    },
+    {
+      "_id": "notif_02",
+      "id": "notif_02",
+      "userId": "usr_renter_01",
+      "title": "Booking Confirmed",
+      "message": "Your booking for Caterpillar 308 CR has been confirmed by Apex Machinery.",
+      "type": "booking_status",
+      "link": "#/bookings",
+      "read": true,
+      "createdAt": "2026-10-14T09:15:00.000Z"
+    },
+    {
+      "_id": "notif_03",
+      "id": "notif_03",
+      "userId": "usr_owner_01",
+      "title": "Payout Released",
+      "message": "Simulated payout for Booking EQ-7319 (₹27,000) has been transferred.",
+      "type": "payment",
+      "link": "#/earnings",
+      "read": true,
+      "createdAt": "2026-09-15T18:00:00.000Z"
+    }
+  ]
+}
